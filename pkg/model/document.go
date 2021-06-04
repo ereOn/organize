@@ -43,6 +43,9 @@ type Document struct {
 	// The tags on the document.
 	Tags Tags `json:"tags"`
 
-	// The provider info.
-	ProviderInfo []byte `json:"providerInfo"`
+	// The name of provider to use.
+	ProviderName string `json:"providerName"`
+
+	// The provider data.
+	ProviderData []byte `json:"providerData,omitempty"`
 }
